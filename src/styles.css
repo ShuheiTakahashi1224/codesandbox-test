@@ -1,3 +1,77 @@
 body {
   font-family: sans-serif;
+  margin: 0;
+}
+
+.c-input {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+}
+.c-button {
+  padding: 4px 16px;
+  border: none;
+  border-radius: 16px;
+  transition: background 0.3s ease 0s, color 0.3s ease 0s;
+}
+.c-button:hover {
+  color: #fff;
+  background: #ff7fff;
+  cursor: pointer;
+}
+.c-title {
+  color: #666;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.c-task {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.c-task_list {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+}
+.c-task_list__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 15px;
+  position: relative;
+}
+.c-task_list__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 50%;
+}
+.c-task_list__item:not(:first-child) {
+  margin-top: 8px;
+}
+.c-task_list__item_name {
+  margin: 0;
+}
+.p-add_task {
+  background: #c1ffff;
+}
+.p-imcomplete_task {
+  background: #c6ffe2;
+  height: auto;
+  min-height: 200px;
+}
+.p-complete_task {
+  background: #ffffe0;
+  height: auto;
+  min-height: 200px;
 }

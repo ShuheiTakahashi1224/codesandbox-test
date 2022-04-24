@@ -6,9 +6,33 @@
   </head>
 
   <body>
-    <div id="app"></div>
-    <p>修正しました</p>
-
+    <div class="c-task p-add_task">
+      <input
+        type="text"
+        class="c-input p-add_task__input"
+        placeholder="TODOを入力"
+      />
+      <button class="c-button">追加</button>
+    </div>
+    <div class="c-task p-imcomplete_task">
+      <p class="c-title">未完了のTODO</p>
+      <ul class="c-task_list">
+        <li class="c-task_list__item">
+          <p class="c-task_list__item_name">TODOです</p>
+          <button class="c-button">完了</button>
+          <button class="c-button">削除</button>
+        </li>
+      </ul>
+    </div>
+    <div class="c-task p-complete_task">
+      <p class="c-title">完了したTODO</p>
+      <ul class="c-task_list">
+        <li class="c-task_list__item">
+          <p class="c-task_list__item_name">TODOでした</p>
+          <button class="c-button">戻す</button>
+        </li>
+      </ul>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
