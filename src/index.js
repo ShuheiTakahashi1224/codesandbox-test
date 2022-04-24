@@ -1,4 +1,5 @@
 const addTask = () => {
+  const incompleteTaskList = document.getElementById("js-incomplete_task_list");
   const targetInput = document.getElementById("js-add_task_input");
   const inputText = targetInput.value;
   targetInput.value = "";
@@ -13,15 +14,21 @@ const addTask = () => {
   const completeButton = document.createElement("button");
   completeButton.className = "c-button";
   completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+    alert("complete");
+  });
   const deleteButton = document.createElement("button");
   deleteButton.className = "c-button";
   deleteButton.innerText = "削除";
+  deleteButton.addEventListener("click", () => {
+    const deleteTarget = deleteButton.parentNode;
+    incompleteTaskList.removeChild(deleteTarget);
+  });
 
   newTask.appendChild(newTask_name);
   newTask.appendChild(completeButton);
   newTask.appendChild(deleteButton);
 
-  const incompleteTaskList = document.getElementById("js-incomplete_task_list");
   incompleteTaskList.appendChild(newTask);
 };
 
