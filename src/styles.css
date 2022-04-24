@@ -65,7 +65,7 @@ body {
 .p-add_task {
   background: #c1ffff;
 }
-.p-imcomplete_task {
+.p-incomplete_task {
   background: #c6ffe2;
   height: auto;
   min-height: 200px;

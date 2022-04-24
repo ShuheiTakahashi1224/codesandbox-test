@@ -3,20 +3,22 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
 
   <body>
     <div class="c-task p-add_task">
       <input
         type="text"
+        id="js-add_task_input"
         class="c-input p-add_task__input"
         placeholder="TODOを入力"
       />
-      <button class="c-button">追加</button>
+      <button id="js-add_task__button" class="c-button">追加</button>
     </div>
-    <div class="c-task p-imcomplete_task">
+    <div class="c-task p-incomplete_task">
       <p class="c-title">未完了のTODO</p>
-      <ul class="c-task_list">
+      <ul id="js-incomplete_task_list" class="c-task_list">
         <li class="c-task_list__item">
           <p class="c-task_list__item_name">TODOです</p>
           <button class="c-button">完了</button>
@@ -26,13 +28,14 @@
     </div>
     <div class="c-task p-complete_task">
       <p class="c-title">完了したTODO</p>
-      <ul class="c-task_list">
+      <ul id="js-complete_task_list" class="c-task_list">
         <li class="c-task_list__item">
           <p class="c-task_list__item_name">TODOでした</p>
           <button class="c-button">戻す</button>
         </li>
       </ul>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
